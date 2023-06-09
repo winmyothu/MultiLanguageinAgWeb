@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: WSLagent
+  name: WSLagent
+  demands:
+   - agent.name -equals WSLagent
 
 steps:
 - task: NodeTool@0
