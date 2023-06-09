@@ -19,7 +19,7 @@ steps:
 - script: |
     npm i -g @angular/cli
     npm i --force
-    ng build --configuartion=production
+    ng build --configuration=production
   displayName: 'angular cli insall, npm install and build'
 
 - task : CmdLine@2
