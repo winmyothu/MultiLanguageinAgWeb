@@ -22,11 +22,6 @@ steps:
     ng build --configuration=production
   displayName: 'angular cli insall, npm install and build'
 
-- task : CmdLine@2
-  inputs:
-    script: |
-      cd build
-
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/build'
