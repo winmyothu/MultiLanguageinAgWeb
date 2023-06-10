@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-success">
+<nav class="navbar navbar-light bg-info">
 
   <div class="container">
 
@@ -13,7 +13,6 @@
       <select class="form-select" #selectedLang (change)="switchLang(selectedLang.value)">
 
         <option *ngFor="let language of translate.getLangs()" [value]="language"
-
           [selected]="language === translate.currentLang">
 
 
@@ -27,69 +26,69 @@
 
   </div>
 
- </nav>
+</nav>
 
- <div class="container">
+<div class="container">
 
- <div class="row mt-3">
+  <div class="row mt-3">
 
-  <div class="col-md-6 mx-auto">
-    <form>
+    <div class="col-md-6 mx-auto">
+      <form>
 
-      <div class="form-group">
+        <div class="form-group">
 
-        <label>{{'Name' | translate}}</label>
+          <label>{{'Name' | translate}}</label>
 
-        <input type="text" class="form-control">
+          <input type="text" class="form-control">
 
-        <small class="text-danger">{{'NameError' | translate}}</small>
+          <small class="text-danger">{{'NameError' | translate}}</small>
 
-      </div>
+        </div>
 
-      <div class="form-group">
+        <div class="form-group">
 
-        <label>{{'Email' | translate}}</label>
+          <label>{{'Email' | translate}}</label>
 
-        <input type="email" class="form-control">
+          <input type="email" class="form-control">
 
-      </div>
+        </div>
 
-      <div class="form-group">
+        <div class="form-group">
 
-        <label>{{'PhoneNo' | translate}}</label>
+          <label>{{'PhoneNo' | translate}}</label>
 
-        <input type="tel" class="form-control">
+          <input type="tel" class="form-control">
 
-      </div>
+        </div>
 
-      <div class="form-group">
+        <div class="form-group">
 
-        <label>{{'Password' | translate}}</label>
+          <label>{{'Password' | translate}}</label>
 
-        <input type="password" class="form-control">
+          <input type="password" class="form-control">
 
-      </div>
+        </div>
 
-      <div class="form-group">
+        <div class="form-group">
 
-        <label>{{'Bio' | translate}}</label>
+          <label>{{'Bio' | translate}}</label>
 
-        <textarea rows="3" class="form-control"></textarea>
+          <textarea rows="3" class="form-control"></textarea>
 
-      </div>
+        </div>
 
-      <div class="form-group form-check">
+        <div class="form-group form-check">
 
-        <input type="checkbox" class="form-check-input">
+          <input type="checkbox" class="form-check-input">
 
-        <label class="form-check-label">{{'TermsConditions' | translate}}</label>
+          <label class="form-check-label">{{'TermsConditions' | translate}}</label>
 
-      </div>
+        </div>
 
-      <button type="button" class="btn btn-block btn-success">{{'Submit' | translate}}</button>
+        <button type="button" class="btn btn-block btn-primary">{{'Submit' | translate}}</button>
 
-    </form>
+      </form>
+    </div>
   </div>
- </div>
 
- </div>
+</div>
